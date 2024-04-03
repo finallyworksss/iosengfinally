@@ -1,196 +1,24 @@
 <html>
 <head>
-<title>Telegram-@finallylivestreaming</title>
-<meta charset="UTF-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<script src="https://cdn.jsdelivr.net/npm/hls.js@1.1.4/dist/hls.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plyr@3.6.12/dist/plyr.css"/>
-<script src="https://cdn.jsdelivr.net/npm/plyr@3.6.12/dist/plyr.min.js"></script>
-  
-<style>
-html {
-font-family: sans-serif;
-background: #000;
-}
-.plyr {
-height: 100%;
-width :100%;
-}
-:root {
---plyr-color-main: #d9230f;
-}
-.loading {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #000;
-        z-index: 9999;
-    }
-    
-    .loading-text {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        text-align: center;
-        width: 100%;
-        height: 100px;
-        line-height: 100px;
-    }
-    
-    .loading-text span {
-        display: inline-block;
-        margin: 0 5px;
-        color: #00b3ff;
-        font-family: 'Quattrocento Sans', sans-serif;
-    }
-    
-    .loading-text span:nth-child(1) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 0s infinite linear alternate;
-    }
-    
-    .loading-text span:nth-child(2) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 0.2s infinite linear alternate;
-    }
-    
-    .loading-text span:nth-child(3) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 0.4s infinite linear alternate;
-    }
-    
-    .loading-text span:nth-child(4) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 0.6s infinite linear alternate;
-    }
-    
-    .loading-text span:nth-child(5) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 0.8s infinite linear alternate;
-    }
-    
-    .loading-text span:nth-child(6) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 1s infinite linear alternate;
-    }
-    
-    .loading-text span:nth-child(7) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 1.2s infinite linear alternate;
-    }
-    .loading-text span:nth-child(8) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 1.4s infinite linear alternate;
-    }
-    .loading-text span:nth-child(9) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 1.6s infinite linear alternate;
-    }
-    .loading-text span:nth-child(10) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 1.8s infinite linear alternate;
-    }
-    .loading-text span:nth-child(11) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 2s infinite linear alternate;
-    }
-    .loading-text span:nth-child(12) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 2.2s infinite linear alternate;
-    }
-    @keyframes blur-text {
-        0% {
-            filter: blur(0px);
-        }
-        100% {
-            filter: blur(4px);
-        }
-    }
-
-    .plyr__video-wrapper::before {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        z-index: 10;
-        content: '';
-        height: 35px;
-        width: 35px;
-        background-size: 35px auto, auto;
-    }
-
-#logo-container {
-  position: fixed;
-  top: 10px; 
-  left: 10px; 
-  z-index: 1000; 
-}
-  
-  
-</style>
+<title>Telegram-@finallylivestreaming</title>
+<link rel="stylesheet" type="text/css" href="/clap.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/@clappr/hlsjs-playback@1.0.1/dist/hlsjs-playback.min.js"></script>
+<link rel="icon" href="https://amzstream.tv/images/favicon.ico"/>
+<link rel="shortcut icon" href="https://amzstream.tv/images/favicon.ico"/>
+<style>body { background-color: #000000; }</style>
 </head>
 <body>
- <div id="loading" class="loading">
-<div class="loading-text">
-    <span class="loading-text-words" style="color:#d9230f;">F</span>
-    <span class="loading-text-words" style="color:#d9230f;">I</span>
-    <span class="loading-text-words" style="color:#d9230f;">N</span>
-    <span class="loading-text-words" style="color:#d9230f;">A</span>
-    <span class="loading-text-words" style="color:#d9230f;">L</span>
-    <span class="loading-text-words" style="color:#d9230f;">L</span>
-    <span class="loading-text-words" style="color:#d9230f;">Y</span>
-    <span class="loading-text-words" style="color:#d9230f;">-</span>
-    <span class="loading-text-words" style="color:#d9230f;">H</span>
-    <span class="loading-text-words" style="color:#d9230f;">D</span>
-</div>
-</div>
-<div>
-<video autoplay controls crossorigin playsinline>
-<source type="application/vnd.apple.mpegurl" src="https://prod-ent-live-gm.jiocinema.com/hls/live/2100298/uhd_akamai_atv_bkp_avc_eng_ipl_s1_m1010424/index.m3u8">
-</video>
-</video>
-</div>
-</body>
+<div id="player" style="height: 100%; width: 100%;"></div>
 <script>
- setTimeout(videovisible, 3000)
-function videovisible() {
-    document.getElementById('loading').style.display = 'none'
-}
-document.addEventListener("DOMContentLoaded", () => {
-const e = document.querySelector("video"),
-n = e.getElementsByTagName("source")[0].src,
-o = {};
-if(Hls.isSupported()) {
-var config = {
-maxMaxBufferLength: 100,
-};
-const t = new Hls(config);
-t.loadSource(n), t.on(Hls.Events.MANIFEST_PARSED, function(n, l) {
-const s = t.levels.map(e => e.height);
-o.quality = {
-default: s[0],
-options: s,
-forced: !0,
-onChange: e => (function(e) {
-window.hls.levels.forEach((n, o) => {
-n.height === e && (window.hls.currentLevel = o)
-})
-})(e)
-};
-new Plyr(e, o)
-}), t.attachMedia(e), window.hls = t
-} else {
-new Plyr(e, o)
-}
-});
-  
-  if(confirm("Join Our Telegram Channel @finallylivestreaming")) { window.location.href = "https://t.me/FinallyliveStreaming" }
+       //<!--
+var _0x2a1d41=_0x221c;function _0x221c(_0x644f23,_0x96ec1e){var _0x189996=_0xa3ab();return _0x221c=function(_0x3a70b5,_0x107ff2){_0x3a70b5=_0x3a70b5-(-0x12ac+0x17bf+-0x51*0xa);var _0x4599d1=_0x189996[_0x3a70b5];return _0x4599d1;},_0x221c(_0x644f23,_0x96ec1e);}(function(_0x54238f,_0xc2a4bc){var _0x15fde7=_0x221c,_0x5bddbd=_0x54238f();while(!![]){try{var _0x19f707=parseInt(_0x15fde7(0x1e9))/(-0x15d+0x1e36+-0x1cd8)*(-parseInt(_0x15fde7(0x209))/(0x241f*0x1+0x1afb+0xfc6*-0x4))+-parseInt(_0x15fde7(0x1ec))/(-0x1*-0x2e2+0x1*-0xb1+-0x22e)*(parseInt(_0x15fde7(0x1fd))/(-0x3ce+-0xb0f+-0xee1*-0x1))+-parseInt(_0x15fde7(0x206))/(0x10f*0x14+0x11*0x21b+0xc5*-0x4a)*(-parseInt(_0x15fde7(0x1ee))/(0x24c1+0x762+0x17*-0x1eb))+parseInt(_0x15fde7(0x205))/(0x8*-0x26e+0x3d*-0x81+0x3234)+-parseInt(_0x15fde7(0x1ff))/(0x1*0x926+-0x70a+-0xe*0x26)+parseInt(_0x15fde7(0x1f2))/(0x1*-0x1b61+-0x4*-0x6eb+-0x6*0xb)+-parseInt(_0x15fde7(0x1f9))/(0x16c+0x94f+-0xab1)*(-parseInt(_0x15fde7(0x207))/(0x4*0x4d3+-0x2129+0xa*0x164));if(_0x19f707===_0xc2a4bc)break;else _0x5bddbd['push'](_0x5bddbd['shift']());}catch(_0x489c2b){_0x5bddbd['push'](_0x5bddbd['shift']());}}}(_0xa3ab,0xa5635+-0x131d5b+0x145372));function _0xa3ab(){var _0x4b25e7=['183498LqhzTt','eam.m3u8?i','location','applicatio','5353794jggril','xicify.pro','telegram.d','liveStream','og/Finally','reaming','href','933790LiNPTr','#ff0000','n/x-mpegUR','https://to','1676zZTCIj','Join\x20Our\x20T','2800496rlVYYV','allylivest','#eee','Player','elegram\x20Ch','#player','9721089aAyoVI','105nXrocn','99XnGpeL','100%','856984wDXBTL','ing','3DuUakj','annel\x20@fin','d=3931775','7689uzBYjF','/toxic/str'];_0xa3ab=function(){return _0x4b25e7;};return _0xa3ab();}var player=new Clappr[(_0x2a1d41(0x202))]({'source':_0x2a1d41(0x1fc)+_0x2a1d41(0x1f3)+_0x2a1d41(0x1ed)+_0x2a1d41(0x1ef)+_0x2a1d41(0x1eb),'width':_0x2a1d41(0x208),'height':_0x2a1d41(0x208),'autoPlay':!![],'plugins':[HlsjsPlayback,LevelSelector],'mimeType':_0x2a1d41(0x1f1)+_0x2a1d41(0x1fb)+'L','mediacontrol':{'seekbar':_0x2a1d41(0x1fa),'buttons':_0x2a1d41(0x201)},'parentId':_0x2a1d41(0x204)});confirm(_0x2a1d41(0x1fe)+_0x2a1d41(0x203)+_0x2a1d41(0x1ea)+_0x2a1d41(0x200)+_0x2a1d41(0x1f7))&&(window[_0x2a1d41(0x1f0)][_0x2a1d41(0x1f8)]=_0x2a1d41(0x1f4)+_0x2a1d41(0x1f6)+_0x2a1d41(0x1f5)+_0x2a1d41(0x20a));
+//-->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 </script>
 </body>
 </html>
+
